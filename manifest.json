@@ -1,0 +1,18 @@
+  { 
+    "name" : "Browser Cookies",
+    "version" : "1.0",
+    "author" : "Anukriti Jha",
+    "description" : "An extension to manage your browser cookies!",
+    "permissions": [ "cookies","storage", "tabs", "http://*/*", "https://*/*" , "nativeMessaging"],
+    "icons": { "16": "icon.jpg", "48": "icon.jpg", "128": "icon.jpg" },
+    "browser_action": {
+      "default_title": "Cookie Manager",
+      "default_icon": "icon.jpg",
+      "default_popup": "index.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "manifest_version": 2
+  }
